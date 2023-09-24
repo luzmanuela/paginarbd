@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>cs</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css" />
+	
+	
+	
+      <script src="jquery-3.4.1.js"></script>  <!-- plugin jquery -->
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <div class="wrapper">
+         <!-- end loader -->
+         <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+               <div id="dismiss">
+                  <i class="fa fa-arrow-left"></i>
+               </div>
+               <ul class="list-unstyled components">
+                  <li class="active">
+                     <a href="index.html">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#game">Ubicación Geográfica</a>
+                  </li>
+                  <li>
+                     <a href="#about">About</a>
+                  </li>       
+                  <li>
+                     <a href="#contact">Comprar Boletos</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <div id="content">
+            <!-- header -->
+            <header>
+               <!-- header inner -->
+               <div class="head_top">
+                  <div class="header">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-3 logo_section">
+                              <div class="full">
+                                 <div class="center-desk">
+                                    <div class="logo">
+                                       <a href="index.html"><img src="images/logorbd.png" alt="#"></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-9">
+                              <div class="right_header_info">
+                                 <ul>
+                                    <li class="menu_iconb">
+                                       <a href="Javascript:void(0)">Login</a>
+                                    </li>
+                                    <li>
+                                       <button type="button" id="sidebarCollapse">
+                                       <img src="images/menu_icon.png" alt="#" />
+                                       </button>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+             <div class="banner_main">
+                  <img src="images/rbdimagen4.webp" alt="#"/>
+                  <div class="container-fluid padding3">
+                     <div class="row">
+                     <!--    <div class="col-md-12">
+                           <div class="text-bg">
+                              <a href="Javascript:void(0)">Play now</a>
+                           </div>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+            </section> 
+         <!-- Categories -->
+         <!-- casino -->
+         <div id="game" class="casino">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Ubicación Geográfica</h2>
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-20 padding_bottom">
+                     <div class="game_box">
+                        <figure>
+                           <div id="map" style="z-index:0"></div>
+                        </figure>
+                     </div>
+                     <div class="game">
+                        <h3>Medellín, Antioquia</h3>
+                     </div>
+                  </div>
+                
+
+               </div>
+            </div>
+         </div>
+         <!-- end casino -->
+         <!-- licens -->
+         <div class="licens">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Precio De Boletos</h2>
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div id="licens" class="carousel slide licens_Carousel " data-ride="carousel">
+                        <ol class="carousel-indicators">
+                           <li data-target="#licens" data-slide-to="0" class="active"></li>
+                           <li data-target="#licens" data-slide-to="1"></li>
+                           <li data-target="#licens" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <div class="container">
+                                 <div class="carousel-caption ">
+                                    <div class="row d_flex">
+                                       <div  class="col-md-6">
+                                          <div class="test_box">
+                                             <div class="jons">
+                                                <h4>Localidad</h4>
+                                             </div>
+                                             <p>El mapa refleja la ubicación aproximada de las secciones para este lugar.
+                                                La distribución real de los lugares y asientos puede variar sin previo aviso</p>
+                                             <a class="read_more" href="Javascript:void(0)">Play Online</a>
+                                          </div>
+                                       </div>
+                                       <div  class="col-md-6">
+                                          <div class="test_box">
+                                             <div class="jons">
+                                                <figure><img src="images/localidad.jpeg" alt="#"/></figure>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="container">
+                                 <div class="carousel-caption">
+                                    <div class="row d_flex">
+                                       <div  class="col-md-6">
+                                          <div class="test_box">
+                                             <div class="jons">
+                                                <h4>Precios</h4>
+                                             </div>
+                                             <p>Evento sujeto a cargo x servicio por el sistema eticket (IVA INCLUIDO) , los cuales están incluidos en el precio listado.</p>
+                                             <a class="read_more" href="Javascript:void(0)">Play Online</a>
+                                          </div>
+                                       </div>
+                                       <div  class="col-md-6">
+                                          <div class="test_box">
+                                             <div class="jons">
+                                                <figure><img src="images/precio.jpeg" alt="#"/></figure>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+         
+                        </div>
+                        <a class="carousel-control-prev" href="#licens" role="button" data-slide="prev">
+                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#licens" role="button" data-slide="next">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                     <p class="lorem">El aforo incluye reservas (por razones técnicas, de patrocinadores y vistas parciales que eventualmente se pueden liberar a venta) 
+
+                        *TODOS LOS PALCOS SON PARA 10 PERSONAS                       
+                        Área para personas con movilidad reducida: El sitio del evento contará con áreas para personas con movilidad reducida. Por favor informar esta condición en el momento de realizar su compra a través de las líneas de atención al cliente de eticket, y al personal logístico el día del evento.</p>
+                  </div>
+                  <div id="about" class="col-md-12">
+                     <ul class="spinit">
+                        <li><a href="Javascript:void(0)">Biografía</a></li>
+                        <li><a href="Javascript:void(0)">Álbumes</a></li>
+                        <li><a href="Javascript:void(0)">Giras</a></li>
+                        <li><a href="Javascript:void(0)">Premios & Nominaciones</a></li>
+                     </ul>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end lLicens -->
+         <!-- customer -->
+         <div id="customer"  class="customer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Rebelde (RBD)</h2>
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div class="customer_text">
+                        <p>Uno de los tópicos que marcó el éxito de la serie  de televisión fue la formación de una banda: RBD. La producción de la serie concibió la idea del grupo musical para promocionar tanto a los personajes como a la telenovela misma. El proyecto rápidamente rebasó en éxito a la telenovela misma, tanto que ya puede considerarse como un concepto separado. La banda tiene presentaciones públicas, e incluso ha tenido giras nacionales e internacionales independientes de la telenovela y apuestan por su incursión en el mercado de habla inglesa. </p>
+                        <div class="customer_box">
+                           <i><img src="images/rbd22.png" alt="#"/></i>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end customer -->
+         <!-- reqeste -->
+         <div id="contact" class="reqeste">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Comprar Boletos</h2>
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                     <form id="cochang" class="form_main">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <input class="form_control" placeholder="Nombre" type="text" name="Name">
+                           </div>
+                           <div class="col-md-12">
+                              <input class="form_control" placeholder="Teléfono" type="text" name="Phone number">
+                           </div>
+                           <div class="col-md-12">
+                              <input class="form_control" placeholder="Email" type="text" name="Email">
+                           </div>
+                           <div class="col-md-12">
+                              <input class="form_control" placeholder="Conversación" type="text" name="Message">
+                           </div>
+                           <div class="col-md-12">
+                              <input class="form_control" placeholder="Número de boletos" type="text" name="Message">
+                           </div>
+                           <div class="col-md-12">
+                              <input class="form_control" placeholder="Número de boletos" type="text" name="Message">
+                           </div>
+                           <div class="col-md-12">
+                              <label class="form_contro" for="lugares">Lugares en el concierto</label><br>
+                           </div>
+                           <div class="col-md-8">
+                              <input  type="checkbox" name="uno"> 
+                           	<label  for="uno">PALCO SOY REBELDE</label><br>
+                           	<input  type="checkbox" name="dos">
+                           	<label   for="dos">PALCO SÁLVAME</label><br> 
+                              <input  type="checkbox" name="tres">
+                           	<label   for="dos">PALCOS SOLO QUÉDATE EN SILENCIO</label><br>
+                              <input  type="checkbox" name="cuatro">
+                           	<label   for="dos">PALCO SER O PARECER</label><br>
+                              <input  type="checkbox" name="cinco">
+                           	<label   for="dos">ZONA TRAS DE MI </label><br>
+                              <input  type="checkbox" name="seis">
+                           	<label   for="dos">GRADERIA OCCIDENTA ALTA ORO  </label><br>
+                              <input  type="checkbox" name="siete">
+                           	<label   for="dos">GRADERIA OCCIDENTAL ALTA PLATA  </label><br>
+                              <input  type="checkbox" name="ocho">
+                           	<label   for="dos">GRADERIA OCCIDENTAL ALTA </label><br>
+                              <input  type="checkbox" name="nueve">
+                           	<label   for="dos">GRADERIA OCCIDENTAL  BAJA </label><br>
+                              <input  type="checkbox" name="diez">
+                           	<label   for="dos">ZONA ESTE CORAZÓN  </label><br>
+                              <input  type="checkbox" name="once">
+                           	<label   for="dos">GRADERIA ORIENTAL ALTA  </label><br>
+                              <input  type="checkbox" name="doce">
+                           	<label   for="dos">GRADERIA ORIENTAL BAJA  </label><br>
+                              <input  type="checkbox" name="trece">
+                           	<label   for="dos">GRADERIA NORTE ALTA  </label><br>
+                              <input  type="checkbox" name="catorce">
+                           	<label   for="dos">GRADERIA NORTE BAJA </label><br><br>
+                           </div>                           
+                           <div class="col-md-12">
+                              <button class="send_btn">Comprar</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end reqeste -->
+         <!--  footer -->
+         <footer>
+            <div class="footer">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="address">
+                           <h3>Subscribe Now</h3>
+                           <form class="newtetter">
+                              <button class="submit">submit</button>
+                              <input class="tetter" placeholder="Enter your email" type="text" name="Enter your email">
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <div class="address">
+                                 <h3>Links</h3>
+                                 <ul class="Menu_footer">
+                                    <li class="active"> <a href="index.html">Home</a> </li>
+                                    <li><a href="#about">About</a> </li>
+                                    <li><a href="#game">Ubicación Geográfica</a> </li>
+                                    <li><a href="#customer">Comprar Boletos</a> </li>
+                                    <li><a href="#conatct">Contacto</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <div class="address">
+                                 <h3>Contactenos</h3>
+                                 <ul class="Links_footer">
+                                    <li>Dirección Responsable: Cra. 11 No. 87ª-51 Local 6 of 201
+                                        Tel: 3156734252                                        </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <div class="container">
+                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- end footer -->
+      </div>
+      <div class="overlay"></div>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+       <script src="js/custom.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+         
+             $('#dismiss, .overlay').on('click', function() {
+                 $('#sidebar').removeClass('active');
+                 $('.overlay').removeClass('active');
+             });
+         
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').addClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+             $(".fancybox").fancybox({
+                 openEffect: "none",
+                 closeEffect: "none"
+             });
+         
+             $(".zoom").hover(function() {
+         
+                 $(this).addClass('transition');
+             }, function() {
+         
+                 $(this).removeClass('transition');
+             });
+         });
+      </script>
+      <script>
+	
+	
+	
+         var map = L.map('map',
+         {
+            zoom: 10
+         }).setView([6.256773, -75.590229], 12);           
+         
+         
+         var mapabase = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+            {
+               maxZoom: 15,
+               attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            });
+         
+         mapabase.addTo(map);
+         var myIcon = L.icon({
+                  iconUrl: 'images/iconocon3.png',
+                  iconSize: [98, 98],
+                  iconAnchor: [22, 98],
+                  popupAnchor: [-3, -76],
+                  });
+                  
+         
+         L.marker([6.256773, -75.590229], {icon: myIcon}).addTo(map).bindPopup("Estadio de Fútbol Atanasio Girardot");
+         
+
+         </script>
+     
+   </body>
+</html>
+
